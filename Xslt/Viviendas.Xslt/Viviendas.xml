@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="Viviendas.xsl" type="text/xsl"?>
+<!DOCTYPE viviendas SYSTEM "Viviendas.dtd">
+
+<viviendas>
+	<vivienda>
+	    <direccion>
+	        <calle>Avda.Constitucion</calle>
+	        <numero>12</numero>
+	        <localidad>Sevilla</localidad>
+	        <provincia>Sevilla</provincia>
+	    </direccion>
+	    <refCatastral>123123331f</refCatastral>
+	    <habitaciones>
+	        <habitacion area="10" tipo="dormitorio"></habitacion>
+	        <habitacion area="20" tipo="salon"></habitacion>
+	        <habitacion area="8" tipo="baño"></habitacion>
+	        <habitacion area="10" tipo="cocina"></habitacion>
+	    </habitaciones>
+	    <servicios>
+	        <servicio>Pista de Padel</servicio>
+	        <servicio>Piscina</servicio>
+	        <servicio>Plaza de aparcamiento</servicio>
+	    </servicios>
+	</vivienda>
+
+	<vivienda>
+	    <direccion>
+	        <calle>Avda de Almargen</calle>
+	        <numero>10</numero>
+	        <localidad>Bormujos</localidad>
+	        <provincia>Sevilla</provincia>
+	    </direccion >
+	    <refCatastral>123645431f</refCatastral>
+	    <habitaciones>
+	        <habitacion area="15" tipo="dormitorio"></habitacion>
+	        <habitacion area="12" tipo="dormitorio"></habitacion>
+	        <habitacion area="25" tipo="salon"></habitacion>
+	        <habitacion area="10" tipo="baño"></habitacion>
+	        <habitacion area="20" tipo="cocina"></habitacion>
+	    </habitaciones>
+	    <servicios>
+	        <servicio>Pista de Tenis</servicio>
+	        <servicio>Plaza de aparcamiento</servicio>
+	    </servicios>
+	</vivienda>
+
+</viviendas>

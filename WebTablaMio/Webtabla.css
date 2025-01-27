@@ -1,0 +1,79 @@
+body{
+    background-image: url(Imagenes/gotele.jpeg);
+    font-size: 20px;
+}
+
+div{
+    height: 900px;
+    margin: 0 auto;
+    width: 90%;
+    background-color: rgb(255, 0, 0);
+    border: solid;
+    overflow: auto;
+}
+
+header{
+    height: 150px;
+    border: solid;
+    background-color: red;
+}
+
+nav{
+    height: 600px;
+    border: solid;
+    background-color: greenyellow;
+    width: 25%;
+    float: left;
+}
+
+section{
+    height: 600px;
+    border: solid;
+    background-color: greenyellow;
+    width: 74.25%;
+    float: right;
+}
+
+footer{
+    height: 150px;
+    border: solid;
+    background-color: red;
+}
+
+a.menu{
+    color: black;
+    background-color: coral;
+    text-decoration: none;
+    border: solid;
+    border-radius:20px ;
+    display: block;
+    margin-bottom: 10px;
+    display: block;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+}
+
+a.menu:hover{
+    transition: 1s;
+    transform: rotate(360deg);
+    box-shadow: 5px 5px 0px 5px rgb(49, 40, 40);
+    background-color: rgb(255, 255, 255);
+    border-top: solid;
+    border-left: solid;
+    border-right: solid;
+}
+
+img.tentation{
+    display: block;
+    width: 40%;
+    float: left;
+    margin: auto;
+}
+
+p.tentacion{
+    display: block;
+    float:right;
+    text-align: right;
+}

@@ -1,0 +1,16 @@
+<!ELEMENT personas (persona)+ >
+<!ENTITY rsa "República Sudafricana">
+<!ENTITY eeuu "Estados Unidos">
+<!ENTITY spa "España">
+<!ELEMENT persona (nombrep, edad, password, sueldo) >
+<!ATTLIST persona
+            dni CDATA #REQUIRED
+            micolor (rojo|azul|amarillo|verde) #REQUIRED
+            pais ENTITY>
+<!-- Chapuza: convertimos el elemento micolor a un atributo
+     para que pueda tener una lista de valores posibles -->
+
+<!ELEMENT nombrep (#PCDATA)>
+<!ELEMENT edad (#PCDATA)>
+<!ELEMENT password (#PCDATA)>
+<!ELEMENT sueldo (#PCDATA)>

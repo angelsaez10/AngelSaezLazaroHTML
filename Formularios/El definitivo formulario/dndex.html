@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="forms.js"></script>
+    <title>Forms 2</title>
+    <script src="javaS.js"></script>
+</head>
+<body id="cuerpo">
+    <h2 class="h21">Forms</h2>
+    <form method="GET" name="forms" target="_blank"
+         action="https://www.w3schools.com/action_page.php">
+    <fieldset class="f1">
+        <legend class="legend">Listas de seleccion</legend>
+         <fieldset class="f11">Elige un coche <br>
+            <select name="coches" id="coches" size="4">
+                <option value="Toyota">Supra mk4</option>
+                <option value="Nissan gtr r34">Nissan gtr r34</option>
+                <option value="Mazda rx7">Mazda rx7</option>
+                <option value="Subaru impreza">Subaru impreza</option>
+            </select>
+        </fieldset>
+         
+        <fieldset class="f12" id="f12">
+         Elige un equipo <br>
+            <select name="equipos" id="equipos">
+                <optgroup label="Equipos de primera">
+                    <option value="Barcelona">Barcelona</option>
+                    <option value="Madrid">Madrid</option>
+                    <option value="Atletico de madrid">Atletico de madrid</option>
+                    <option value="Sevilla">Sevilla</option>
+
+                <optgroup label="Equipos de segunda">
+                    <option value="Malaga">Malaga</option>
+                    <option value="Alcorcon">Alcorcon</option>
+                    <option value="Gijon">Gijon</option>
+                    <option value="Madrid Castilla">Madrid Castilla</option>
+                </optgroup>
+             </select>
+       
+        </fieldset>
+    </fieldset>
+
+    <fieldset class="f2" id="f2">
+        <legend class="legend">Otros controles del formulario</legend>
+        <fieldset class="f21">
+            <textarea name="untexto" id="untexto">Escriba algo en esta area...</textarea>
+        </fieldset>
+        <fieldset class="f22">
+            Elige una fecha <br>
+            <input type="date" name="fecha"> <br><br>
+            Elige un color <br>
+            <input type="color" id="color" name="color" value="color" onchange="cambiaColor();">
+
+        </fieldset>
+    </fieldset>
+    
+<fieldset class="f3">
+    <legend class="legend">
+        Otros controles del formulario
+    </legend>
+
+    <fieldset class="f31">
+        Elige un numero <br>
+        <input type="number" name="numero">
+    </fieldset>
+
+    <fieldset class="f32">
+        Elige un numero <br>
+        <input type="range" size="100" id="rango">
+    </fieldset>
+    <fieldset>
+        <label for="contraseña" >Contraseña:</label>
+        <input type="password" name="contraseña" id="contraseña">
+        <button type="button" onclick="verDatos()" >Mostrar contraseña</button>
+    </fieldset>
+</fieldset>
+
+    <fieldset class="f4">
+        <input type="submit" name="submit">
+        <input type="reset" name="reset">
+    </fieldset>
+    </form>
+</body>
+</html>

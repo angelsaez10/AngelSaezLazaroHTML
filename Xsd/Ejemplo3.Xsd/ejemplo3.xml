@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<personas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="ejemplo3.xsd">
+
+<persona DNI="54371775M" talla="38">
+    <nombrep>Anselmo</nombrep>
+    <edad>44</edad>
+    <contrasena>miperro345</contrasena>
+    <color>Cobre envejecido</color>
+    <sueldo>1500.67</sueldo>
+    <bingo>73 75 79</bingo>
+</persona>
+
+<persona DNI="54236692R" talla="XL">
+    <nombrep>Anselmo</nombrep>
+    <edad>35</edad>
+    <contrasena>migato887</contrasena>
+    <color>Lavanda grisácea</color>
+    <sueldo>1765.38</sueldo>
+    <bingo>89 13 33</bingo>
+</persona>
+</personas>

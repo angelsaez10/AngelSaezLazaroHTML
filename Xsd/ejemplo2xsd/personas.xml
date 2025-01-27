@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<personas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="personas.xsd">
+  <persona dni="12345678A" talla="S">
+		<nombrep>Miguel Martín</nombrep>
+    <edad>37</edad>
+    <password>abcdef33</password>
+    <micolor>rojo</micolor>
+    <sueldo moneda="euro">1500.75</sueldo>
+    <numeros>7 13 45 56 88</numeros>
+	</persona>
+
+	<persona dni="33445566M" talla="38">
+		<nombrep>María García</nombrep>
+    <edad>31</edad>
+    <password>pepito22</password>
+    <micolor>verde</micolor>
+    <sueldo moneda="euro">1850.00</sueldo>
+	</persona>
+</personas>

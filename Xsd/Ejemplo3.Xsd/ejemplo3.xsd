@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="personas">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="persona" minOccurs="1 " maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="persona">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="nombrep" type="xs:string"/>
+            <xs:element name="edad" type="edadPersona"/>
+            <xs:element ref="contrasena"/>
+            <xs:element name="color" type="tipoColores"/>
+            <xs:element name="sueldo" type="tipoSueldo"/>
+            <xs:element name="bingo" type="tipoBingo"/>
+        </xs:sequence>
+        <xs:attribute name="DNI"  use="required"/>
+        <xs:attribute name="talla"  use="required" type="tipoTalla"/>
+
+    </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="tipoSueldo">
+    <xs:restriction base="xs:decimal">
+        <xs:minInclusive value="1134.82"/>
+        <xs:maxInclusive value="100000.78"/>
+        <xs:fractionDigits value="2"/>
+        <xs:totalDigits value="7"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="edadPersona">
+    <xs:restriction base="xs:unsignedByte">
+        <xs:minInclusive value="1" />
+        <xs:maxInclusive value="99" />
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:element name="contrasena">
+    <xs:simpleType>
+        <xs:restriction base="xs:token">
+            <xs:minLength value="8"/>
+            <xs:maxLength value="16"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:element>
+
+<xs:simpleType name="tipoColores">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="Zafiro oscuro"/>
+        <xs:enumeration value="Orquídea"/>
+        <xs:enumeration value="Turquesa ácido"/>
+        <xs:enumeration value="Melocotón quemado"/>
+        <xs:enumeration value="Lavanda grisácea"/>
+        <xs:enumeration value="Cobre envejecido"/>
+
+    </xs:restriction>
+</xs:simpleType>
+    <xs:simpleType name="tipoTallaNumero">
+        <xs:restriction base="xs:unsignedInt">
+            <xs:minInclusive value="38"></xs:minInclusive>
+            <xs:maxExclusive value="52"></xs:maxExclusive>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tipoTallaLetra">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="S"></xs:enumeration>
+            <xs:enumeration value="M"></xs:enumeration>
+            <xs:enumeration value="L"></xs:enumeration>
+            <xs:enumeration value="XL"></xs:enumeration>
+        </xs:restriction>
+
+    </xs:simpleType>
+    <xs:simpleType name="tipoTalla">
+        <xs:union memberTypes="tipoTallaNumero tipoTallaLetra"/>
+    </xs:simpleType>
+<xs:attribute name="DNI">
+    <xs:simpleType>
+        <xs:restriction base="xs:token">
+            <xs:pattern value="\d(8)[A-Z]"></xs:pattern> 
+        </xs:restriction>
+    </xs:simpleType>
+</xs:attribute>
+
+<xs:simpleType name="listaNumeros">
+    <xs:list itemType="xs:unsignedByte"></xs:list>
+</xs:simpleType>
+
+<xs:simpleType name="tipoBingo">
+    <xs:restriction base="listaNumeros">
+        <xs:maxLength value="5"></xs:maxLength>
+    </xs:restriction>
+</xs:simpleType>
+
+</xs:schema>

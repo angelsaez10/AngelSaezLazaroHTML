@@ -1,0 +1,85 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.legend{
+    background-color: white;
+    border: 20px black;
+    border-color: black;
+}
+
+.h21{
+    display: grid;
+    place-content: center;
+}
+
+.f1{
+    border-color: black;
+   background-color: grey;
+   width: 90%;
+   margin: 0 auto;
+   margin-bottom: 10px;
+}
+
+.f11{
+    border-color: black;
+    width: 50%;
+    float: left;
+}
+
+.f12{
+    border-color: black;
+    height: 88.49px;
+}
+
+.f2{
+    border-color: black;
+    background-color: grey;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+ }
+
+ .f21{
+    border-color: black;
+    width: 50%;
+    float: left;
+    height: 103px;
+}
+
+.f22{
+    border-color: black;
+
+}
+
+.f3{
+    border-color: black;
+    background-color: grey;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+ }
+
+ .f31{
+    border-color: black;
+    width: 50%;
+    float: left;
+}
+
+.f32{
+    border-color: black;
+
+}
+
+.f4{
+    border-color: black;
+    background-color: grey;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+ }
+
+
+
+ 

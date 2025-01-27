@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="persona3.xsl"?>
+<!DOCTYPE personas SYSTEM "persona3.dtd">
+<personas>
+
+<persona>
+   <nombre>Miguel</nombre>
+   <edad>35</edad>
+   <password>holahola</password>
+   <micolor>azul</micolor>
+   <sueldo moneda="euro">1500</sueldo>
+</persona>
+
+<persona>
+   <nombre>Josefa</nombre>
+   <edad>28</edad>
+   <password>cocacola</password>
+   <micolor>verde</micolor>
+   <sueldo moneda="euro">1700</sueldo>
+</persona>
+
+<persona>
+   <nombre>Agapito</nombre>
+   <edad>50</edad>
+   <password>jajejijoju</password>
+   <micolor>lavanda</micolor>
+   <sueldo moneda="euro">1200</sueldo>
+</persona>
+
+</personas>

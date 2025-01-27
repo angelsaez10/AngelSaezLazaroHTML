@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="backmarket.xsl"?>
+<!DOCTYPE backmarket SYSTEM "backmarket.dtd">
+<!-- Tienda de teléfonos de segunda mano -->
+<backmarket>
+
+<telefono codigo="SG21">
+   <marca>Samsung</marca>
+   <modelo>Galaxy s21 5G</modelo>
+   <sistop version="11">Android</sistop>
+   <pantalla medida="pulgadas">6.2</pantalla>
+   <almacenamiento>
+      <interno>64</interno>
+      <ram>4</ram>
+   </almacenamiento>
+   <camaras>
+   	  <camara medida="Mpx" tamano="20">Principal</camara>
+      <camara medida="Mpx" tamano="5" >Selfi</camara>
+   </camaras>
+   <precio moneda="euro">295</precio>
+</telefono>
+
+<telefono codigo="Mi10T">
+   <marca>Xiaomi</marca>
+   <modelo>Mi 10T Lite 5G</modelo>
+   <sistop version="10">Android</sistop>
+   <pantalla medida="pulgadas">5.4</pantalla>
+   <almacenamiento>
+      <interno>128</interno>
+      <ram>6</ram>
+   </almacenamiento>
+   <camaras>
+      <camara medida="Mpx" tamano="32">Principal</camara>
+      <camara medida="Mpx" tamano="8" >Selfi</camara>
+   </camaras>
+   <precio moneda="dolar">160</precio>
+</telefono>
+</backmarket>

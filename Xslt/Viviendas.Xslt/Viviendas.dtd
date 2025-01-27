@@ -1,0 +1,14 @@
+<!ELEMENT viviendas (vivienda+)>
+<!ELEMENT vivienda (direccion,refCatastral,habitaciones,servicios)>
+<!ELEMENT direccion (calle,numero,localidad,provincia)>
+<!ELEMENT calle (#PCDATA)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT localidad (#PCDATA)>
+<!ELEMENT provincia (#PCDATA)>
+<!ELEMENT refCatastral (#PCDATA)>
+<!ELEMENT habitaciones (habitacion+)>
+<!ELEMENT habitacion EMPTY>
+<!ATTLIST habitacion area NMTOKEN #REQUIRED>
+<!ATTLIST habitacion tipo NMTOKEN #REQUIRED>
+<!ELEMENT servicios (servicio+)>
+<!ELEMENT servicio (#PCDATA)>

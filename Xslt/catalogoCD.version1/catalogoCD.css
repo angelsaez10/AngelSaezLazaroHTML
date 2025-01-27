@@ -1,0 +1,22 @@
+h2 {
+    text-align: center;
+}
+table {
+    margin:auto;
+}
+table, th, td {
+    border: 1px solid;
+    border-collapse:collapse;
+}
+th {
+    background-color: palegreen;
+}
+td {
+    text-align: center;
+}
+.amarillo {
+    background-color:yellow;
+}
+.celeste {
+    background-color:cyan;
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elementos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="ejemplo1simple2.xsd">
+    <elemento codigo="e01">
+		<nombre>Agua</nombre>
+		<color>Azul</color>
+	</elemento>
+	<elemento codigo="e02">
+		<nombre>Fuego</nombre>
+		<color>Rojo</color>
+	</elemento>
+</elementos>

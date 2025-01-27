@@ -1,0 +1,30 @@
+<!-- backmarket.dtd -->
+<!ELEMENT backmarket (telefono)+>
+
+<!ELEMENT telefono (marca, modelo, sistop, pantalla, almacenamiento, camaras, precio)>
+<!ATTLIST telefono
+			codigo CDATA #REQUIRED>
+<!ELEMENT marca (#PCDATA)>
+<!ELEMENT modelo (#PCDATA)>
+<!ELEMENT sistop (#PCDATA)>
+<!ELEMENT pantalla (#PCDATA)>
+
+<!ATTLIST sistop 
+			version CDATA #REQUIRED>
+<!ATTLIST pantalla 
+			medida CDATA #FIXED "pulgadas">
+
+<!ELEMENT almacenamiento (interno, ram)>
+<!ELEMENT interno (#PCDATA)>
+<!ELEMENT ram     (#PCDATA)>
+
+<!ELEMENT camaras (camara)+>
+<!ELEMENT camara (#PCDATA)>
+
+<!ATTLIST camara
+			medida CDATA #FIXED "Mpx"
+			tamano CDATA #REQUIRED>
+
+<!ELEMENT precio (#PCDATA)>
+<!ATTLIST precio 
+			moneda (euro|dolar|yuan) "euro">

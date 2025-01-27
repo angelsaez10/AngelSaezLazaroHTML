@@ -1,0 +1,7 @@
+<!ELEMENT persona (nombre,edad,password,micolor,sueldo)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT edad (#PCDATA)>
+<!ELEMENT password (#PCDATA)>
+<!ELEMENT micolor (#PCDATA)>
+<!ELEMENT sueldo (#PCDATA)>
+<!ATTLIST sueldo moneda NMTOKEN #REQUIRED>

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="elementos">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="elemento" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="elemento">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="nombre" type="xs:string"/>
+      <xs:element name="color"  type="xs:string"/>
+      <xs:element name="masa"   type="tipoDecimal">
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="codigo" type="xs:string" use="required" />
+  </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="tipoDecimal">
+  <xs:restriction base="xs:decimal">
+    <xs:totalDigits value="5"/>
+    <xs:fractionDigits value="1"/>
+  </xs:restriction>
+</xs:simpleType>
+
+</xs:schema>
